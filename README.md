@@ -1,5 +1,5 @@
 # EventPassIn
-# PassIn API
+# Pass In API
 A PassIn API é uma aplicação desenvolvida em C# utilizando o framework ASP.NET Core MVC. Esta API foi criada para gerenciar eventos, oferecendo funcionalidades como registro de participantes, check-in de participantes em eventos e criação/recuperação de eventos.
 
 # Recursos Principais
