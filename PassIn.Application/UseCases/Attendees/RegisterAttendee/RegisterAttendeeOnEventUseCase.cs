@@ -9,7 +9,7 @@ namespace PassIn.Application.UseCases.Events.RegisterAttendee
 {
     public class RegisterAttendeeOnEventUseCase
     {
-        // como o dbContext está em nível de classe(todos da classe possuem acesso, não é necessário passar como parâmetro nos métodos necessários)
+
         private readonly PassInDbContext _dbContext;
         public RegisterAttendeeOnEventUseCase()
         {
@@ -36,8 +36,7 @@ namespace PassIn.Application.UseCases.Events.RegisterAttendee
 
         private void Validate(Guid eventId, RequestRegisterEventJson request)
         {
-            // Para validar se o evento existe na base de dados,
-            // foi usado um any para verificar se existe algum evento (ev) onde o id desse evento ev => ev.Id é igual a eventId
+
             var eventEntity = _dbContext.Events.Find(eventId);
             if (eventEntity is null)
                 throw new NotFoundException("An event with this ID doesn't exist.");
@@ -61,7 +60,6 @@ namespace PassIn.Application.UseCases.Events.RegisterAttendee
             var attendeesForEvent = _dbContext.Attendees.Count(attendee => attendee.Event_Id == eventId);
             if (attendeesForEvent == eventEntity.Maximum_Attendees)
             {
-                //verificar exception
                 throw new ConflictException("There is no room for this event.");
             }
 
