@@ -10,7 +10,6 @@ namespace PassIn.Api.Controllers;
 [ApiController]
 public class EventsController : ControllerBase
 {
-    //requisição do tipo post para registrar um evento
     [HttpPost]
     [ProducesResponseType(typeof(ResponseRegisteredJson), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
@@ -23,7 +22,7 @@ public class EventsController : ControllerBase
 
 
     }
-    //requisição do tipo get para encontrar no banco através do id
+
     [HttpGet]
     [Route("{id}")]
     [ProducesResponseType(typeof(ResponseEventJson), StatusCodes.Status200OK)]
