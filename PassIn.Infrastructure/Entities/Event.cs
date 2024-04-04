@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace PassIn.Infrastructure.Entities
 {
-    //classe pra instanciar elementos, com as específicações do db
     public class Event
     {
         public Guid Id { get; set; } = Guid.NewGuid();
