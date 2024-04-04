@@ -1,6 +1,6 @@
 # EventPassIn
 # Pass In API
-A Pass In API é uma aplicação desenvolvida em C# utilizando o framework ASP.NET Core MVC. Esta API foi criada para gerenciar eventos, oferecendo funcionalidades como registro de participantes, check-in de participantes em eventos e criação/recuperação de eventos.
+A Pass In API é uma aplicação desenvolvida em C# realizada durante o curso NLW Unite da Rocketseat utilizando o framework ASP.NET Core MVC. Esta API foi criada para gerenciar eventos, oferecendo funcionalidades como registro de participantes, check-in de participantes em eventos e criação/recuperação de eventos.
 
 # Recursos Principais
 *Registro de Participantes em Eventos:* Esta API permite o registro de participantes em eventos por meio da rota /attendees. Os usuários podem registrar um novo participante em um evento específico ou recuperar a lista de participantes de um evento.
@@ -15,3 +15,5 @@ A Pass In API é uma aplicação desenvolvida em C# utilizando o framework ASP.N
 *C#:* A linguagem de programação principal utilizada no projeto é o C#, que é amplamente utilizado no ecossistema do .NET Core.
 
 *Microsoft.AspNetCore.Mvc:* A API faz uso extensivo do namespace Microsoft.AspNetCore.Mvc para definir controladores, rotas e a lógica de manipulação de solicitações HTTP.
+
+Diogo Padoveis Antunes - diogopadoveis@gmail.com
